@@ -13,7 +13,7 @@ namespace Richasy.Font.UWP
     {
         public BrandIcon()
         {
-            FontFamily = new Windows.UI.Xaml.Media.FontFamily("/Assets/Brand.ttf#Brand");
+            FontFamily = new Windows.UI.Xaml.Media.FontFamily("/Assets/Brands.ttf#Brands");
         }
         public BrandIcon(BrandSymbol symbol) : this()
         {
