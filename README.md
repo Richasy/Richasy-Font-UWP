@@ -1,55 +1,55 @@
-﻿# 字体库使用说明
+﻿# Font library instructions
 
-[English](./README_EN.md)
+[中文说明](./README_ZH.md)
 
-## 收录字体
+## Inclusion font
 
-- [Feather](https://feathericons.com/)：该字体涵盖了常用的工具图标，比如箭头、设置图标等
-- [Material](https://material.io/resources/icons/?style=baseline)：该字体对标Google Material设计规范，提供了一千余图标
-- [Brands](https://simpleicons.org/)：涵盖了市面上绝大多数公司Logo
+- [Feather](https://feathericons.com/): This font covers commonly used tool icons, such as arrows, settings icons, etc.
+- [Material](https://material.io/resources/icons/?style=baseline): This font matches the Google Material design specifications and provides more than a thousand icons
+- [Brands](https://simpleicons.org/): Covers most company logos on the world
 
-## 图标预览
+## Preview
 
-1. 进入项目，在**Assets**文件夹中找到需要的字体(`.ttf`)，安装后使用[Character Map](https://www.microsoft.com/store/productId/9WZDNCRDXF41)应用打开
-2. 进入项目，在**Demo**文件夹中点开对应字体文件夹的`demo.html`文件，在本地预览
+1. Enter the project, find the required font (`.ttf`) in the **Assets** folder, and use Character Map App after installation to open it.
+2. Enter the project, open the `demo.html` file in the corresponding font folder in the **Demo** folder, and preview it locally.
 
-## 使用方法
+## Usage
 
 > nuget：[Richasy.Font.UWP](https://www.nuget.org/packages/Richasy.Font.UWP/)
 
-### 图标类
+### Icon class
 
-项目中创建了3种`IconElement`，分别是`FeatherIcon`, `MaterialIcon`和`BrandIcon`，分别对应上面的3种字体。
+Three types of `IconElement` were created in the project, namely `FeatherIcon`, `MaterialIcon` and `BrandIcon`, which correspond to the three fonts above.
 
-图标类继承自`FontIcon`，FontFamily默认已经设定好，同时提供了`Symbol`枚举依赖属性，方便你以一种更友好的方式（相对于输入字符）来选取图标。
+The icon class inherits from `FontIcon`, FontFamily has been set by default, and also provides the `Symbol` enumeration dependent property, which is convenient for you to select icons in a more friendly way (relative to input characters).
 
-*Xaml中使用*
+*Xaml*
 
 ```xml
-<NavigationViewItem Content="心电图">
+<NavigationViewItem Content="Activity">
     <NavigationViewItem.Icon>
         <font:FeatherIcon Symbol="Activity"/>
     </NavigationViewItem.Icon>
 </NavigationViewItem>
 ```
 
-*C#中使用*
+*C#*
 
 ```csharp
 var icon = new FeatherIcon(FeatherSymbol.Activity);
 ```
 
-*C#中获取图标对应的文本*
+*C# - Get character from symbol*
 
 ```csharp
 string icon = ((char)icon).ToString();
 ```
 
-### 系统字体类
+### System font class
 
-这里主要使用`CanvasFontSet`来获取当前的系统字体，过滤掉了图标字体和可能的乱码字体
+Here mainly uses `CanvasFontSet` to get the current system font, filtering out the icon font and possible garbled font
 
-*使用*
+*Usage*
 
 ```csharp
 var fonts = SystemFont.GetSystemFonts();
@@ -60,15 +60,15 @@ foreach (var font in fonts)
 }
 ```
 
-## 注意事项
+## Precautions
 
-为了符合语法，我对图标的名称进行了一些修改，规则如下：
+In order to comply with the grammar, I made some modifications to the icon's name, the rules are as follows:
 
-1. 去除`icon-`的前缀
-2. 去除`-`,`_`等连接符，命名方式为帕斯卡命名
-3. 首字符为数字的（比如`360`），会在最前面加一个`_`
+1. Remove the prefix of `icon-`
+2. Remove the `-`, `_` and other connectors, the naming method is Pascal
+3. If the first character is a number (such as `360`), a `_` will be added at the front
 
-## 感谢
+## Thanks
 
 - [win2d](https://github.com/microsoft/Win2D)
 - [IcoMoon](https://icomoon.io/)
