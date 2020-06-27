@@ -1,5 +1,7 @@
 ﻿# 字体库使用说明
 
+[English](./README_EN.md)
+
 ## 收录字体
 
 - [Feather](https://feathericons.com/)：该字体涵盖了常用的工具图标，比如箭头、设置图标等
@@ -8,7 +10,7 @@
 
 ## 图标预览
 
-1. 进入项目，在**Assets**文件夹钟找到需要的字体(`.ttf`)，安装后使用[Character Map](https://www.microsoft.com/store/productId/9WZDNCRDXF41)应用打开
+1. 进入项目，在**Assets**文件夹中找到需要的字体(`.ttf`)，安装后使用[Character Map](https://www.microsoft.com/store/productId/9WZDNCRDXF41)应用打开
 2. 进入项目，在**Demo**文件夹中点开对应字体文件夹的`demo.html`文件，在本地预览
 
 ## 使用方法
