@@ -33,7 +33,7 @@ namespace Richasy.Font.UWP
         {
             if (e.NewValue is MaterialSymbol icon)
             {
-                var instance = d as FeatherIcon;
+                var instance = d as MaterialIcon;
                 instance.Glyph = ((char)icon).ToString();
             }
         }
