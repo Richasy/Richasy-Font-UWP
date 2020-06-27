@@ -24,19 +24,42 @@ namespace Richasy.Font.UWP
             FontFace = fontFace;
         }
 
-        public static List<SystemFont> GetSystemFonts()
+        public static List<SystemFont> GetSystemFonts(string language="en-us")
         {
+            language = language.ToLower();
             var fonts = CanvasFontSet.GetSystemFontSet();
             var result = new List<SystemFont>();
             foreach (var item in fonts.Fonts)
             {
                 if (item.IsSymbolFont)
                     continue;
-                item.FamilyNames.TryGetValue("en-us", out string name);
-                if (!string.IsNullOrEmpty(name))
+                string name = "";
+                if(!string.IsNullOrEmpty(language))
+                    item.FamilyNames.TryGetValue(language, out name);
+                if(string.IsNullOrEmpty(name) && item.FamilyNames.Count > 0)
+                {
+                    string local = Windows.System.UserProfile.GlobalizationPreferences.Languages[0].ToString().ToLower();
+                    item.FamilyNames.TryGetValue(local, out name);
+                    if(string.IsNullOrEmpty(name))
+                        name = item.FamilyNames.First().Value;
+                }
+                if (!string.IsNullOrEmpty(name) && !result.Any(p => p.Name == name))
+                {
                     result.Add(new SystemFont(name, item));
+                }  
             }
             return result;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is SystemFont font &&
+                   Name == font.Name;
+        }
+
+        public override int GetHashCode()
+        {
+            return 539060726 + EqualityComparer<string>.Default.GetHashCode(Name);
         }
     }
 }
