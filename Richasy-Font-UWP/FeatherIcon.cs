@@ -16,6 +16,11 @@ namespace Richasy.Font.UWP
             FontFamily = new Windows.UI.Xaml.Media.FontFamily("/Assets/Feather.ttf#Feather");
         }
 
+        public FeatherIcon(FeatherSymbol symbol):this()
+        {
+            Symbol = symbol;
+        }
+
         public FeatherSymbol Symbol
         {
             get { return (FeatherSymbol)GetValue(SymbolProperty); }

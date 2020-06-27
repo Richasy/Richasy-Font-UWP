@@ -15,7 +15,10 @@ namespace Richasy.Font.UWP
         {
             FontFamily = new Windows.UI.Xaml.Media.FontFamily("/Assets/Material.ttf#Material");
         }
-
+        public MaterialIcon(MaterialSymbol symbol) : this()
+        {
+            Symbol = symbol;
+        }
         public MaterialSymbol Symbol
         {
             get { return (MaterialSymbol)GetValue(SymbolProperty); }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Richasy.Font.UWP</id>
+    <version>1.0.0</version>
+    <authors>Richasy</authors>
+    <owners>Richasy</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/Richasy/Richasy-Font-UWP</projectUrl>
+    <iconUrl>https://i.loli.net/2020/06/27/X5HPaw6VIv3CYdz.png</iconUrl>
+    <description>Richasy自用的字体工具包</description>
+    <releaseNotes>基础构建</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>Richasy uwp font material feather brands</tags>
+  </metadata>
+</package>

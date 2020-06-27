@@ -140,18 +140,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Feather.ttf" />
-    <Content Include="Demo\Brands\demo-files\demo.css" />
-    <Content Include="Demo\Brands\demo-files\demo.js" />
-    <Content Include="Demo\Brands\demo.html" />
-    <Content Include="Demo\Brands\style.css" />
-    <Content Include="Demo\Feather\demo-files\demo.css" />
-    <Content Include="Demo\Feather\demo-files\demo.js" />
-    <Content Include="Demo\Feather\demo.html" />
-    <Content Include="Demo\Feather\style.css" />
-    <Content Include="Demo\Material\demo-files\demo.css" />
-    <Content Include="Demo\Material\demo-files\demo.js" />
-    <Content Include="Demo\Material\demo.html" />
-    <Content Include="Demo\Material\style.css" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Material.ttf" />
