@@ -1,0 +1,8 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Richasy.Font.UWP.Themes">
+    <FontFamily x:Key="FeatherFontFamily">/Assets/Feather.ttf#Feather</FontFamily>
+    <FontFamily x:Key="MaterialFontFamily">/Assets/Material.ttf#Material</FontFamily>
+    <FontFamily x:Key="BrandsFontFamily">/Assets/Brands.ttf#Brands</FontFamily>
+</ResourceDictionary>

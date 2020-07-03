@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Richasy.Font.UWP</id>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
     <authors>Richasy</authors>
     <owners>Richasy</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -15,10 +15,13 @@
     <tags>Richasy uwp font material feather brands</tags>
   </metadata>
   <files>
-    <file src="Assets\Brands.ttf" target="lib\uap10.0\Richasy-Font-UWP\Assets"/>
-    <file src="Assets\Feather.ttf" target="lib\uap10.0\Richasy-Font-UWP\Assets"/>
-    <file src="Assets\Material.ttf" target="lib\uap10.0\Richasy-Font-UWP\Assets"/>
+    <file src="bin\Release\Richasy-Font-UWP\Themes\Generic.xaml" target="lib\uap10.0\Richasy-Font-UWP\Themes"/>
+    <file src="bin\Release\Richasy-Font-UWP\Assets\Brands.ttf" target="lib\uap10.0\Richasy-Font-UWP\Assets"/>
+    <file src="bin\Release\Richasy-Font-UWP\Assets\Feather.ttf" target="lib\uap10.0\Richasy-Font-UWP\Assets"/>
+    <file src="bin\Release\Richasy-Font-UWP\Assets\Material.ttf" target="lib\uap10.0\Richasy-Font-UWP\Assets"/>
+    <file src="bin\Release\Richasy-Font-UWP\Richasy-Font-UWP.xr.xml" target="lib\uap10.0\Richasy-Font-UWP"/>
     <file src="bin\Release\Richasy-Font-UWP.dll" target="lib\uap10.0"/>
     <file src="bin\Release\Richasy-Font-UWP.pdb" target="lib\uap10.0"/>
+    <file src="bin\Release\Richasy-Font-UWP.pri" target="lib\uap10.0"/>
   </files>
 </package>

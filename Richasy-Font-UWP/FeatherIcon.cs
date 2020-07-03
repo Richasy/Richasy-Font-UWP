@@ -1,11 +1,7 @@
 ﻿using Richasy.Font.UWP.Enums;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media;
 
 namespace Richasy.Font.UWP
 {
@@ -13,7 +9,7 @@ namespace Richasy.Font.UWP
     {
         public FeatherIcon()
         {
-            FontFamily = new Windows.UI.Xaml.Media.FontFamily("ms-appx:///Richasy-Font-UWP/Assets/Feather.ttf#Feather");
+            FontFamily = new FontFamily("/Richasy-Font-UWP/Assets/Feather.ttf#Feather");
         }
 
         public FeatherIcon(FeatherSymbol symbol):this()
