@@ -13,7 +13,7 @@ namespace Richasy.Font.UWP
     {
         public FeatherIcon()
         {
-            FontFamily = new Windows.UI.Xaml.Media.FontFamily("/Assets/Feather.ttf#Feather");
+            FontFamily = new Windows.UI.Xaml.Media.FontFamily("ms-appx:///Richasy-Font-UWP/Assets/Feather.ttf#Feather");
         }
 
         public FeatherIcon(FeatherSymbol symbol):this()

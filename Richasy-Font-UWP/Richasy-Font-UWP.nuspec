@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Richasy.Font.UWP</id>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <authors>Richasy</authors>
     <owners>Richasy</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -14,4 +14,11 @@
     <copyright>Copyright 2020</copyright>
     <tags>Richasy uwp font material feather brands</tags>
   </metadata>
+  <files>
+    <file src="Assets\Brands.ttf" target="lib\uap10.0\Richasy-Font-UWP\Assets"/>
+    <file src="Assets\Feather.ttf" target="lib\uap10.0\Richasy-Font-UWP\Assets"/>
+    <file src="Assets\Material.ttf" target="lib\uap10.0\Richasy-Font-UWP\Assets"/>
+    <file src="bin\Release\Richasy-Font-UWP.dll" target="lib\uap10.0"/>
+    <file src="bin\Release\Richasy-Font-UWP.pdb" target="lib\uap10.0"/>
+  </files>
 </package>

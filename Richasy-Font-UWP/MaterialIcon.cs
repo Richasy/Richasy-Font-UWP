@@ -13,7 +13,7 @@ namespace Richasy.Font.UWP
     {
         public MaterialIcon()
         {
-            FontFamily = new Windows.UI.Xaml.Media.FontFamily("/Assets/Material.ttf#Material");
+            FontFamily = new Windows.UI.Xaml.Media.FontFamily("ms-appx:///Richasy-Font-UWP/Assets/Material.ttf#Material");
         }
         public MaterialIcon(MaterialSymbol symbol) : this()
         {
